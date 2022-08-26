@@ -1,0 +1,56 @@
+/** @format */
+
+@import "../../utilities/scss/variables.scss";
+// hero section
+.hero {
+  min-height: 100vh;
+  background: url("../../../../public/images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .text {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    padding: 190px;
+    color: #fff;
+    padding-top: 40vh;
+    background: rgba(0, 0, 0, 0.3);
+    h1 {
+      @include large_heading();
+      color: #fff;
+      font-family: sans-serif;
+      width: 550px;
+      span {
+        color: $green_light;
+      }
+    }
+    p {
+      width: 500px;
+      font-size: 20px;
+    }
+    button {
+      @include button();
+      background-color: $green_light;
+      color: #000;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    .text {
+      padding: 32px;
+      h1 {
+        font-size: 40px;
+        width: 90%;
+        padding-top: 35vh;
+      }
+      p {
+        width: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/** @format */
+// variables
+// colors
+$black_dark: rgb(46, 46, 46);
+$green_dark: #21a0a0;
+$green_light: #0cdfb1;
+$green_lighter: #0eff8f46;
+$black_light: rgba(230, 230, 230, 0.527);
+// dimensions
+$body_margin: 32px 64px;
+$medium_body_margin: 24px 32px;
+
+// mixins
+@mixin button {
+  background-color: $green_dark;
+  padding: 16px 32px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  width: fit-content;
+  &:hover {
+    cursor: pointer;
+  }
+}
+@mixin large_heading {
+  font-size: 64px;
+  font-weight: 700;
+  color: $black_dark;
+}
+@mixin medium_heading {
+  @include large_heading();
+  font-size: 48px;
+}
+@mixin small_heading {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+@mixin input {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+@mixin card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 18px;
+  .icon {
+    color: $green_dark;
+  }
+  h4 {
+    color: $black_dark;
+  }
+  &:hover {
+    background-color: $green_dark;
+    color: #fff;
+    h4 {
+      color: #fff;
+    }
+    .icon {
+      color: #fff;
+    }
+  }
+}

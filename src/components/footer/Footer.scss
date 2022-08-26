@@ -1,0 +1,173 @@
+/** @format */
+
+@import "../utilities/scss/variables.scss";
+.footer {
+  margin-top: auto;
+  min-height: 50vh;
+  background: linear-gradient(to bottom, #fff 40%, $black_dark 0%);
+  padding-top: 10vh;
+  .footer_header {
+    display: flex;
+    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+    padding: 32px 64px;
+    background: url("../../../public/images/footer.jpg");
+    background-size: cover;
+    .text {
+      color: $black_dark;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 128px;
+      height: 100%;
+
+      h1 {
+        @include medium_heading();
+        max-width: 300px;
+      }
+      p {
+        max-width: 300px;
+      }
+      button {
+        @include button();
+      }
+    }
+  }
+  .quick_links {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: $body_margin;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      img {
+        width: 56px;
+      }
+      h3 {
+        width: 100px;
+        color: #fff;
+        line-height: 18px;
+      }
+    }
+    ul {
+      height: 48px;
+      border-left: 3px solid $green_dark;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex: 1;
+      gap: 32px;
+      li {
+        list-style: none;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+    .subscription {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+
+      form {
+        background-color: $black_light;
+        border-radius: 30px;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        gap: 8px;
+
+        input {
+          @include input();
+          margin-left: 24px;
+          color: #fff;
+          font-size: 18px;
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.466);
+          }
+        }
+        button {
+          @include button();
+        }
+      }
+    }
+  }
+  .copyright {
+    margin: $body_margin;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    padding: 64px 16px;
+    font-weight: 500;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    .media {
+      display: flex;
+      justify-content: flex-end;
+      gap: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    background: linear-gradient(to bottom, #fff 30%, $black_dark 0%);
+    .footer_header {
+      padding: 32px 32px;
+      .text {
+        padding: 0;
+        h1 {
+          width: 90%;
+          font-size: 40px;
+        }
+        p {
+          width: 90%;
+        }
+      }
+    }
+    .quick_links {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+      ul {
+        border: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .copyright {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    .quick_links {
+      padding: 24px;
+      ul {
+        flex-direction: column;
+      }
+      .subscription {
+        width: 100%;
+        form {
+          justify-content: space-between;
+          width: 100vw;
+          input {
+            width: 50%;
+          }
+          button {
+            padding: 8px 16px;
+          }
+        }
+      }
+    }
+  }
+}
