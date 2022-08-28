@@ -1,0 +1,22 @@
+/** @format */
+
+@import "../utilities/scss/variables.scss";
+.scrolltop {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+  margin: 100px;
+  background: #0cdfb12f;
+  font-size: 24px;
+  color: #fff;
+  &:hover {
+    background-color: $green_light;
+    color: #000;
+  }
+}

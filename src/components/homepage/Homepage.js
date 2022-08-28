@@ -11,17 +11,24 @@ import Data from "./customerdata/Data";
 const Homepage = () => {
   return (
     <div className="homepage">
-      <Hero />
-
-      <Offers />
-
-      <About />
-
-      <Services />
-
-      <Testimonial />
-
-      <Data />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="offers">
+        <Offers />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="testimonial">
+        <Testimonial />
+      </div>
+      <div id="data">
+        <Data />
+      </div>
     </div>
   );
 };

@@ -27,10 +27,15 @@ const Footer = () => {
           <img src="./images/logo.png" alt="" /> <h3>aluku cleaning</h3>
         </div>
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>contact</li>
-          <li>booking</li>
+          <a href="#hero">
+            <li>home</li>
+          </a>
+          <a href="#about">
+            <li>about</li>
+          </a>
+          <a href="#services">
+            <li>services</li>
+          </a>
         </ul>
         <div className="subscription">
           <form>
