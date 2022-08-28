@@ -2,7 +2,7 @@
 
 import "./Sidenav.scss";
 import * as Scroll from "react-scroll";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { GlobalState } from "../globalstate/Context";
 
 const Sidenav = () => {
