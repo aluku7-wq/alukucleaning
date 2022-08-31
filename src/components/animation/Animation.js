@@ -14,7 +14,11 @@ export const sideAnimation = {
     hide: { opacity: 0 },
   },
   child: {
-    hidden: { x: 400 },
-    show: { x: 0, transition: { type: "spring", mass: 2, duration: 1.5 } },
+    hidden: { x: 200, opacity: 0 },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: { type: "spring", mass: 2, duration: 1.5 },
+    },
   },
 };
