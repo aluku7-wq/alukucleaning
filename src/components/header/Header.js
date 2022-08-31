@@ -21,10 +21,15 @@ const Header = () => {
         <Link to="hero" spy={true} smooth={true} offset={50} duration={500}>
           <li>home</li>
         </Link>
-        <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+        <Link to="about" spy={true} smooth={true} offset={50} duration={1000}>
           <li>about</li>
         </Link>
-        <Link to="services" spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1500}>
           <li>services</li>
         </Link>
       </ul>
