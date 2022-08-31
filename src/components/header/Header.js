@@ -28,7 +28,7 @@ const Header = () => {
           <li>services</li>
         </Link>
       </ul>
-      <div className="menu" onClick={() => setdisplay("flex")}>
+      <div className="menu" onClick={() => setdisplay(true)}>
         <div className="barone"></div>
         <div className="bartwo"></div>
       </div>
